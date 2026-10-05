@@ -1,0 +1,143 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "hero-eyebrow-chip",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-05T11:29:08.145Z",
+        "reason": "Eyebrow labels are part of the supplied mockups; user's brief says match the PNGs exactly and not add or remove elements"
+      },
+      {
+        "rule": "hero-eyebrow-chip",
+        "value": "*",
+        "files": [
+          "how-it-works.html"
+        ],
+        "createdAt": "2026-10-05T11:29:08.516Z",
+        "reason": "Eyebrow labels are part of the supplied mockups; user's brief says match the PNGs exactly and not add or remove elements"
+      },
+      {
+        "rule": "hero-eyebrow-chip",
+        "value": "*",
+        "files": [
+          "join-us.html"
+        ],
+        "createdAt": "2026-10-05T11:29:08.884Z",
+        "reason": "Eyebrow labels are part of the supplied mockups; user's brief says match the PNGs exactly and not add or remove elements"
+      },
+      {
+        "rule": "hero-eyebrow-chip",
+        "value": "*",
+        "files": [
+          "safety.html"
+        ],
+        "createdAt": "2026-10-05T11:29:09.258Z",
+        "reason": "Eyebrow labels are part of the supplied mockups; user's brief says match the PNGs exactly and not add or remove elements"
+      },
+      {
+        "rule": "hero-eyebrow-chip",
+        "value": "*",
+        "files": [
+          "help.html"
+        ],
+        "createdAt": "2026-10-05T11:29:09.608Z",
+        "reason": "Eyebrow labels are part of the supplied mockups; user's brief says match the PNGs exactly and not add or remove elements"
+      },
+      {
+        "rule": "hero-eyebrow-chip",
+        "value": "*",
+        "files": [
+          "blog.html"
+        ],
+        "createdAt": "2026-10-05T11:29:09.974Z",
+        "reason": "Eyebrow labels are part of the supplied mockups; user's brief says match the PNGs exactly and not add or remove elements"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-05T11:29:11.076Z",
+        "reason": "False positive: full-bleed photo cards and section wrappers; inner text blocks carry their own padding"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "how-it-works.html"
+        ],
+        "createdAt": "2026-10-05T11:29:11.425Z",
+        "reason": "False positive: full-bleed photo cards and section wrappers; inner text blocks carry their own padding"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "join-us.html"
+        ],
+        "createdAt": "2026-10-05T11:29:11.787Z",
+        "reason": "False positive: full-bleed photo cards and section wrappers; inner text blocks carry their own padding"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "safety.html"
+        ],
+        "createdAt": "2026-10-05T11:29:12.153Z",
+        "reason": "False positive: full-bleed photo cards and section wrappers; inner text blocks carry their own padding"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "help.html"
+        ],
+        "createdAt": "2026-10-05T11:29:12.512Z",
+        "reason": "False positive: full-bleed photo cards and section wrappers; inner text blocks carry their own padding"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "join-us.html"
+        ],
+        "createdAt": "2026-10-05T11:47:15.119Z",
+        "reason": "False positive: the detector counts visually small card titles and a hidden screen-reader heading that are semantically h2; the real section headings are 40px against 16px body (2.5x)"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "help.html"
+        ],
+        "createdAt": "2026-10-05T11:47:15.527Z",
+        "reason": "False positive: the detector counts visually small card titles and a hidden screen-reader heading that are semantically h2; the real section headings are 40px against 16px body (2.5x)"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "blog.html"
+        ],
+        "createdAt": "2026-10-05T11:47:15.907Z",
+        "reason": "False positive: the detector counts visually small card titles and a hidden screen-reader heading that are semantically h2; the real section headings are 40px against 16px body (2.5x)"
+      },
+      {
+        "rule": "kicker-above-heading",
+        "value": "*",
+        "files": [
+          "join-us.html"
+        ],
+        "createdAt": "2026-10-05T11:47:16.262Z",
+        "reason": "Kicker is part of the supplied mockup (the Ready to join banner); user's brief says match the PNGs and not add or remove content"
+      }
+    ]
+  }
+}

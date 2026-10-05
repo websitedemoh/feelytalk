@@ -1,0 +1,226 @@
+[
+  {
+    "from": "Cozy Bedside Smartphone Moment.png",
+    "to": "hero-1.jpg",
+    "slot": "Home · Hero photo",
+    "confidence": "high",
+    "note": "Lying on bed, looks left, phone in both hands, empty curtain space on the left"
+  },
+  {
+    "from": "Cozy Rose-Toned Portrait.png",
+    "to": "hero-chip-avatar.jpg",
+    "slot": "Home · \"Aanya\" card avatar",
+    "confidence": "medium",
+    "note": "Front-facing pink-sweater portrait. Same woman as #1? Not certain – see note"
+  },
+  {
+    "from": "Warm Portrait of a Smiling Indian Woman.png",
+    "to": "avatar-1.jpg",
+    "slot": "Home · avatar row 1",
+    "confidence": "high",
+    "note": "Olive-green kurta, bindi, centre parting"
+  },
+  {
+    "from": "Cozy Smiling Portrait in Warm Light.png",
+    "to": "avatar-2.jpg",
+    "slot": "Home · avatar row 2",
+    "confidence": "medium",
+    "note": "White printed kurta, bindi, laughing (hair longer than the prompt)"
+  },
+  {
+    "from": "Warm Portrait in a Cozy Room.png",
+    "to": "avatar-3.jpg",
+    "slot": "Home · avatar row 3",
+    "confidence": "high",
+    "note": "High ponytail, rose sweatshirt, North-East features"
+  },
+  {
+    "from": "Warm Smiles in a Cozy Home.png",
+    "to": "avatar-4.jpg",
+    "slot": "Home · avatar row 4",
+    "confidence": "high",
+    "note": "Round glasses, low bun, beige kurta"
+  },
+  {
+    "from": "Warm Portrait in a Cozy Home.png",
+    "to": "avatar-5.jpg",
+    "slot": "Home · avatar row 5",
+    "confidence": "high",
+    "note": "Bearded man, charcoal henley"
+  },
+  {
+    "from": "Cozy Café Daydream with Headphones.png",
+    "to": "host-card-1.jpg",
+    "slot": "Home · host card 1",
+    "confidence": "high",
+    "note": "Headphones, eyes closed, cheek on hand, cream sweater, 5:4"
+  },
+  {
+    "from": "Warmly Lit Hoodie Portrait.png",
+    "to": "host-card-2.jpg",
+    "slot": "Home · host card 2 (Rohan)",
+    "confidence": "high",
+    "note": "Curly hair, black hoodie, hand near chin, 5:4"
+  },
+  {
+    "from": "Warm Café Portrait with Soft Bokeh.png",
+    "to": "host-card-3.jpg",
+    "slot": "Home · host card 3 (Priya)",
+    "confidence": "high",
+    "note": "Maroon kurta top, café window, head tilt, 5:4"
+  },
+  {
+    "from": "Cozy Headphone Portrait at Dusk.png",
+    "to": "host-card-4.jpg",
+    "slot": "Home · host card 4 (Aman)",
+    "confidence": "high",
+    "note": "Black headphones, curly hair, wide smile, 5:4"
+  },
+  {
+    "from": "Cozy Evening Phone Smiles.png",
+    "to": "cta-banner-bg.jpg",
+    "slot": "Home + How it Works · bottom banner",
+    "confidence": "high",
+    "note": "Man far left, woman far right, dark centre (crop to 4.9:1 strip)"
+  },
+  {
+    "from": "Cozy Pink Bedroom Phone Moment.png",
+    "to": "hero-2.jpg",
+    "slot": "How it Works · hero",
+    "confidence": "medium",
+    "note": "Lying on bed, phone in one hand, pink knit, lamp; could swap with #12"
+  },
+  {
+    "from": "Cozy Café Portrait with Warm Bokeh.png",
+    "to": "collage-2-center.jpg",
+    "slot": "How it Works · step 5 centre card",
+    "confidence": "medium",
+    "note": "Cream cardigan, chin on hand, café – looks similar to #4"
+  },
+  {
+    "from": "Warm Window Portrait.png",
+    "to": "collage-2-right.jpg",
+    "slot": "How it Works · step 5 right card",
+    "confidence": "high",
+    "note": "Long dark hair, soft pink top, looking left, tall"
+  },
+  {
+    "from": "Cozy Blush-Hued Daydream.png",
+    "to": "hero-3.jpg",
+    "slot": "Join Us · hero",
+    "confidence": "medium",
+    "note": "Cheek on hand, curtains left, pink knit; could also be hero-6"
+  },
+  {
+    "from": "Cozy Gamer Portrait in Warm Light.png",
+    "to": "collage-3-left.jpg",
+    "slot": "Join Us · collage left",
+    "confidence": "high",
+    "note": "Curly hair, grey tee, joyful, tall (controller edge at bottom)"
+  },
+  {
+    "from": "Cozy Café Daydream Portrait.png",
+    "to": "collage-3-center.jpg",
+    "slot": "Join Us · collage centre",
+    "confidence": "high",
+    "note": "Mustard sweater, café bokeh, tall"
+  },
+  {
+    "from": "Serene Headphones in Warm Light.png",
+    "to": "collage-3-right.jpg",
+    "slot": "Join Us · collage right",
+    "confidence": "high",
+    "note": "Silver headphones, rose kurta, eyes closed, tall"
+  },
+  {
+    "from": "Cozy Evening Phone Glow.png",
+    "to": "cta-join-bg.jpg",
+    "slot": "Join Us · bottom banner",
+    "confidence": "high",
+    "note": "Man in right third, dark empty left (crop to 4.3:1)"
+  },
+  {
+    "from": "Cozy Evening Smartphone Lounging.png",
+    "to": "hero-4.jpg",
+    "slot": "Safety · hero",
+    "confidence": "high",
+    "note": "On sofa with phone in both hands, 16:9, empty left"
+  },
+  {
+    "from": "Cozy Warm-Lit Hoodie Portrait.png",
+    "to": "report-man.jpg",
+    "slot": "Safety · report panel (small photo)",
+    "confidence": "medium",
+    "note": "Black hoodie man, 2:3; could be collage-2-left instead"
+  },
+  {
+    "from": "Warm Smiling Portrait in Cozy Light.png",
+    "to": "report-girl.jpg",
+    "slot": "Safety · report panel (large photo)",
+    "confidence": "high",
+    "note": "Curly hair, coral top, big smile, 2:3"
+  },
+  {
+    "from": "Cozy Phone Moment in Rose Tones.png",
+    "to": "hero-5.jpg",
+    "slot": "Help · hero",
+    "confidence": "medium",
+    "note": "Propped on elbow, hand on cheek, phone, window + plants left; could swap with #13"
+  },
+  {
+    "from": "Cozy Sunlit Notebook Workspace.png",
+    "to": "blog-1.jpg",
+    "slot": "Blog · article 1",
+    "confidence": "medium",
+    "note": "Blank notebook with tiny heart, plant left, mug right; blog-5 is similar"
+  },
+  {
+    "from": "Sunset Serenity Above the City.png",
+    "to": "blog-2.jpg",
+    "slot": "Blog · article 2",
+    "confidence": "high",
+    "note": "Black headphones, charcoal sweater, profile, sunset skyline"
+  },
+  {
+    "from": "Sleeping Tabby in a Cozy Bedroom.png",
+    "to": "blog-3.jpg",
+    "slot": "Blog · article 3",
+    "confidence": "high",
+    "note": "Sleeping tabby on pink bed"
+  },
+  {
+    "from": "Twilight Over the Cityscape.png",
+    "to": "blog-4.jpg",
+    "slot": "Blog · article 4",
+    "confidence": "high",
+    "note": "Woman from behind, maroon backpack, dusk skyline"
+  },
+  {
+    "from": "Golden Hour City Daydream.png",
+    "to": "blog-6.jpg",
+    "slot": "Blog · article 6",
+    "confidence": "high",
+    "note": "Headphones, olive cardigan, bun, chin on hand, sunset window"
+  },
+  {
+    "from": "Cozy Pink Sweater Smartphone Moment.png",
+    "to": "blog-7.jpg",
+    "slot": "Blog · article 7",
+    "confidence": "high",
+    "note": "Hands on phone back, pink knit"
+  },
+  {
+    "from": "Sunset Rooftop Reflections.png",
+    "to": "blog-8.jpg",
+    "slot": "Blog · article 8",
+    "confidence": "high",
+    "note": "Two friends from behind, rooftop sunset"
+  },
+  {
+    "from": "Cozy Evening Reading Nook.png",
+    "to": "blog-9.jpg",
+    "slot": "Blog · article 9",
+    "confidence": "medium",
+    "note": "Blank notebook, plant, mug, sofa and lamp"
+  }
+]

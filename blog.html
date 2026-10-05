@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog – Real Stories, Helpful Insights | FeelyTalk</title>
+  <meta name="description" content="Real stories, tips and ideas to help you start better conversations, make friends and stay safe online. Read the latest FeelyTalk articles.">
+  <meta name="theme-color" content="#C42C4C">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <!-- EDIT before launch: set <link rel="canonical"> and make og:image / og:url absolute (https://your-domain/...) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="FeelyTalk">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:title" content="Blog – Real Stories, Helpful Insights | FeelyTalk">
+  <meta property="og:description" content="Real stories, tips and ideas to help you start better conversations, make friends and stay safe online. Read the latest FeelyTalk articles.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Nunito:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="stylesheet" href="assets/css/tailwind.min.css">
+  <script src="assets/js/components.js" defer></script>
+  <script src="assets/js/motion.js" defer></script>
+</head>
+<body>
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[70] focus:bg-white focus:px-4 focus:py-2 focus:rounded-lg">Skip to content</a>
+<ft-nav current="blog"></ft-nav>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="page-title">
+    <div class="container-ft hero-grid">
+      <div>
+        <p class="eyebrow">Our blog</p>
+        <h1 id="page-title" class="h1 mt-4">Real Stories.<br><span class="accent">Helpful Insights.</span></h1>
+        <p class="lead mt-5 max-w-[440px]">Explore tips, stories and ideas to make your conversations and connections better.</p>
+        <form class="mt-7 max-w-[420px]" role="search" onsubmit="return false">
+          <label class="pill-input"><ft-icon name="search" class="w-5 h-5"></ft-icon><span class="sr-only">Search articles</span><input id="q" type="search" placeholder="Search articles…" autocomplete="off"></label>
+        </form>
+      </div>
+      <div class="hero-art">
+        <picture><source type="image/webp" srcset="assets/img/hero-6.webp"><img src="assets/img/hero-6.jpg" alt="A woman resting her cheek on her hand, smiling" width="1448" height="1022" decoding="async" fetchpriority="high"></picture>
+        <p class="hand hero-note hero-pin" style="--l:64%;--t:9%;" aria-hidden="true">People<br>Stories<br>Tips<br>Real Talk</p>
+      </div>
+    </div>
+    <svg class="hero-wave" viewBox="0 0 1440 32" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 28C300 32 700-4 1000 10s300 24 440 18V32H0z"/></svg>
+  </section>
+
+  <!-- FILTERS + ARTICLES -->
+  <section class="section !pt-6" aria-label="Articles">
+    <div class="container-ft">
+      <div class="filter-pills" role="group" aria-label="Filter articles by category" id="filters">
+        <button type="button" class="pill" data-cat="all" aria-pressed="true">All</button>
+        <button type="button" class="pill" data-cat="Mental Health" aria-pressed="false">Mental Health</button>
+        <button type="button" class="pill" data-cat="Making Friends" aria-pressed="false">Making Friends</button>
+        <button type="button" class="pill" data-cat="Self Growth" aria-pressed="false">Self Growth</button>
+        <button type="button" class="pill" data-cat="Online Safety" aria-pressed="false">Online Safety</button>
+        <button type="button" class="pill" data-cat="Community" aria-pressed="false">Community</button>
+      </div>
+
+      <h2 class="sr-only">Latest articles</h2>
+      <ul id="posts" class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <li class="card post" data-cat="Self Growth"><a href="#" class="contents"><div class="post-thumb"><span class="thumb-clip"><picture><source type="image/webp" srcset="assets/img/blog-1.webp"><img src="assets/img/blog-1.jpg" alt="" width="760" height="430" loading="lazy" decoding="async"></picture></span><span class="post-tag">Self Growth</span></div><div class="post-body"><h3>How Small Conversations Can Make a Big Difference</h3><p>A simple guide to starting meaningful conversations and building real connections.</p><div class="post-meta"><span>Sep 28, 2024 · 5 min read</span><span class="post-go"><ft-icon name="arrow-right" class="w-4 h-4"></ft-icon></span></div></div></a></li>
+        <li class="card post" data-cat="Mental Health"><a href="#" class="contents"><div class="post-thumb"><span class="thumb-clip"><picture><source type="image/webp" srcset="assets/img/blog-2.webp"><img src="assets/img/blog-2.jpg" alt="" width="760" height="430" loading="lazy" decoding="async"></picture></span><span class="post-tag">Mental Health</span></div><div class="post-body"><h3>It’s Okay to Feel What You Feel</h3><p>Talking about your feelings can help you feel lighter and more in control.</p><div class="post-meta"><span>Sep 24, 2024 · 4 min read</span><span class="post-go"><ft-icon name="arrow-right" class="w-4 h-4"></ft-icon></span></div></div></a></li>
+        <li class="card post" data-cat="Tips"><a href="#" class="contents"><div class="post-thumb"><span class="thumb-clip"><picture><source type="image/webp" srcset="assets/img/blog-3.webp"><img src="assets/img/blog-3.jpg" alt="" width="760" height="430" loading="lazy" decoding="async"></picture></span><span class="post-tag">Tips</span></div><div class="post-body"><h3>5 Easy Ways to Have Better Conversations</h3><p>Practical tips to keep conversations fun, respectful and engaging.</p><div class="post-meta"><span>Sep 20, 2024 · 6 min read</span><span class="post-go"><ft-icon name="arrow-right" class="w-4 h-4"></ft-icon></span></div></div></a></li>
+        <li class="card post" data-cat="Community"><a href="#" class="contents"><div class="post-thumb"><span class="thumb-clip"><picture><source type="image/webp" srcset="assets/img/blog-4.webp"><img src="assets/img/blog-4.jpg" alt="" width="760" height="430" loading="lazy" decoding="async"></picture></span><span class="post-tag">Community</span></div><div class="post-body"><h3>Finding Your People in a Digital World</h3><p>How online communities can help you meet like-minded people and feel less alone.</p><div class="post-meta"><span>Sep 16, 2024 · 5 min read</span><span class="post-go"><ft-icon name="arrow-right" class="w-4 h-4"></ft-icon></span></div></div></a></li>
+        <li class="card post" data-cat="Self Growth"><a href="#" class="contents"><div class="post-thumb"><span class="thumb-clip"><picture><source type="image/webp" srcset="assets/img/blog-5.webp"><img src="assets/img/blog-5.jpg" alt="" width="760" height="430" loading="lazy" decoding="async"></picture></span><span class="post-tag">Self Growth</span></div><div class="post-body"><h3>How to Be Kinder to Yourself</h3><p>Simple reminders to help you build self-confidence and a positive mindset.</p><div class="post-meta"><span>Sep 12, 2024 · 4 min read</span><span class="post-go"><ft-icon name="arrow-right" class="w-4 h-4"></ft-icon></span></div></div></a></li>
+        <li class="card post" data-cat="Mental Health"><a href="#" class="contents"><div class="post-thumb"><span class="thumb-clip"><picture><source type="image/webp" srcset="assets/img/blog-6.webp"><img src="assets/img/blog-6.jpg" alt="" width="760" height="430" loading="lazy" decoding="async"></picture></span><span class="post-tag">Mental Health</span></div><div class="post-body"><h3>Dealing with Overthinking</h3><p>Some gentle tips to help you slow down your thoughts and feel more at peace.</p><div class="post-meta"><span>Sep 8, 2024 · 5 min read</span><span class="post-go"><ft-icon name="arrow-right" class="w-4 h-4"></ft-icon></span></div></div></a></li>
+        <li class="card post" data-cat="Online Safety"><a href="#" class="contents"><div class="post-thumb"><span class="thumb-clip"><picture><source type="image/webp" srcset="assets/img/blog-7.webp"><img src="assets/img/blog-7.jpg" alt="" width="760" height="430" loading="lazy" decoding="async"></picture></span><span class="post-tag">Online Safety</span></div><div class="post-body"><h3>Staying Safe While Connecting Online</h3><p>Important things to keep in mind while talking to new people online.</p><div class="post-meta"><span>Sep 4, 2024 · 4 min read</span><span class="post-go"><ft-icon name="arrow-right" class="w-4 h-4"></ft-icon></span></div></div></a></li>
+        <li class="card post" data-cat="Making Friends"><a href="#" class="contents"><div class="post-thumb"><span class="thumb-clip"><picture><source type="image/webp" srcset="assets/img/blog-8.webp"><img src="assets/img/blog-8.jpg" alt="" width="760" height="430" loading="lazy" decoding="async"></picture></span><span class="post-tag">Making Friends</span></div><div class="post-body"><h3>How to Start a Conversation</h3><p>Feel nervous? Here are some easy ways to break the ice and start talking.</p><div class="post-meta"><span>Aug 30, 2024 · 4 min read</span><span class="post-go"><ft-icon name="arrow-right" class="w-4 h-4"></ft-icon></span></div></div></a></li>
+        <li class="card post" data-cat="Community"><a href="#" class="contents"><div class="post-thumb"><span class="thumb-clip"><picture><source type="image/webp" srcset="assets/img/blog-9.webp"><img src="assets/img/blog-9.jpg" alt="" width="760" height="430" loading="lazy" decoding="async"></picture></span><span class="post-tag">Community</span></div><div class="post-body"><h3>Building a Positive Online Community</h3><p>How we can all make online spaces kinder, safer and more meaningful.</p><div class="post-meta"><span>Aug 26, 2024 · 5 min read</span><span class="post-go"><ft-icon name="arrow-right" class="w-4 h-4"></ft-icon></span></div></div></a></li>
+      </ul>
+      <p id="empty" class="copy mt-8 text-center" hidden>No articles match yet. Try another category or search term.</p>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="section !pt-4 !pb-12 lg:!pb-16" aria-labelledby="news-title">
+    <div class="container-ft">
+      <div class="support-panel px-6 py-9 lg:px-10 lg:py-10 grid gap-6 lg:grid-cols-[1fr_auto] items-center">
+        <div>
+          <p class="eyebrow">Stay updated</p>
+          <h2 id="news-title" class="h2 mt-3">Get New Stories in <span class="accent">Your Inbox</span></h2>
+          <p class="copy mt-3">Be the first to know about new articles, tips and community updates.</p>
+        </div>
+        <form class="flex flex-col sm:flex-row gap-3 lg:w-[520px]" onsubmit="return false">
+          <label class="pill-input flex-1"><ft-icon name="mail" class="w-5 h-5"></ft-icon><span class="sr-only">Email address</span><input type="email" placeholder="Enter your email address" required></label>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<ft-footer current="blog"></ft-footer>
+
+<script>
+  (function () {
+    var pills = document.querySelectorAll('#filters .pill'), posts = document.querySelectorAll('#posts .post'), q = document.getElementById('q'), empty = document.getElementById('empty');
+    var cat = 'all';
+    function apply() {
+      var term = (q.value || '').trim().toLowerCase(), shown = 0;
+      posts.forEach(function (p) {
+        var ok = (cat === 'all' || p.dataset.cat === cat) && (!term || p.textContent.toLowerCase().indexOf(term) > -1);
+        p.hidden = !ok; if (ok) shown++;
+      });
+      empty.hidden = shown !== 0;
+    }
+    pills.forEach(function (b) {
+      b.addEventListener('click', function () {
+        cat = b.dataset.cat;
+        pills.forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+        apply();
+      });
+    });
+    q.addEventListener('input', apply);
+  })();
+</script>
+</body>
+</html>

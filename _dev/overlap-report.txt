@@ -1,0 +1,2 @@
+Overlap audit – 72 runs (6 pages × 6 widths × rest/peak)
+Result: 0 issues

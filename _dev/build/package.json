@@ -1,0 +1,17 @@
+{
+  "name": "feelytalk-build",
+  "private": true,
+  "description": "Compiles assets/css/tailwind.min.css and regenerates the WebP twins in assets/img",
+  "scripts": {
+    "build:css": "tailwindcss -c tailwind.config.js -i input.css -o ../../assets/css/tailwind.min.css --minify",
+    "webp": "node make-webp.js",
+    "gen": "node gen-images.js",
+    "check:overlap": "node check-overlap.js"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5",
+    "tailwindcss": "^3.4.17",
+    "@google/genai": "^1.0.0",
+    "playwright-core": "^1.49.0"
+  }
+}
