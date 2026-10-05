@@ -1,0 +1,115 @@
+﻿/* Responsive fixes overrides (mobile-first) */
+
+/* Make all images scale down gracefully */
+img,
+.logo-img,
+.footer-logo,
+.store-btns img,
+.store-buttons img,
+.talk-image img,
+.works-visuals img,
+.about-left,
+.about-right,
+.left-img,
+.right-img {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block;
+}
+
+/* Ensure containers have comfortable side padding on small screens */
+.container,
+.works-wrap,
+.about-content,
+.hero-content,
+.trust-grid,
+.testimonial-cards,
+.footer-container {
+  box-sizing: border-box;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Make grid-like sections stack on small screens */
+@media (max-width: 900px) {
+  .stats-grid { display: grid !important; grid-template-columns: 1fr !important; gap: 14px !important; }
+  .trust-grid { display: block !important; }
+  .trust-card { width: 100% !important; margin-bottom: 18px !important; }
+  .testimonial-cards { display: block !important; }
+  .t-card { width: 100% !important; margin-bottom: 18px !important; }
+
+  /* Nav adjustments */
+  .nav-links { display: none !important; }
+  .nav-links.show { display: flex !important; flex-direction: column !important; gap: 8px !important; }
+  .menu-btn { display: block !important; }
+
+  /* Reduce large headings for smaller viewports; use fluid sizing */
+  h1, h2, h3, .title, .works-title, .about-title { font-size: calc(18px + 2.5vw) !important; line-height: 1.15 !important; }
+
+  /* Make hero content stack and keep images from overflowing */
+  .hero { padding: 24px 12px !important; }
+  .hero .hero-content { width: 100% !important; max-width: 100% !important; margin: 0 auto !important; }
+  .left-img, .right-img { max-width: 48% !important; margin: 0 auto !important; }
+
+  /* Buttons and badges scale better */
+  .store-btns img, .store-buttons img { max-width: 220px !important; width: 48% !important; }
+
+  /* Reduce heavy fixed heights that can cause overflow */
+  [style*="height:"] { height: auto !important; }
+}
+
+/* Extra small screens tweaks */
+@media (max-width: 420px) {
+  h1, h2, h3, .title { font-size: calc(16px + 2.2vw) !important; }
+  .store-btns img, .store-buttons img { width: 100% !important; max-width: 180px !important; }
+}
+
+/* Utility: ensure any element with fixed pixel widths won't overflow horizontally */
+* { min-width: 0; }
+
+/* Keep general layout responsive when other files set fixed px values */
+.ggg { white-space: normal !important; }
+
+/* =============================
+   MOBILE BOTTOM FLOATING CTA
+============================= */
+@media (max-width: 768px) {
+  .download-widget {
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    border-radius: 0 !important;
+    text-align: center;
+    justify-content: center;
+    padding: 14px 20px !important;
+    font-size: 15px !important;
+    box-shadow: 0 -4px 20px rgba(232,76,91,0.25) !important;
+    z-index: 9999;
+  }
+}
+
+/* =============================
+   MOBILE FAQ SEARCH
+============================= */
+@media (max-width: 600px) {
+  .faq-search {
+    max-width: 100% !important;
+    padding: 12px 20px !important;
+    font-size: 14px !important;
+  }
+}
+
+/* =============================
+   MOBILE BLOG SEARCH
+============================= */
+@media (max-width: 600px) {
+  .blog-search input {
+    max-width: 100% !important;
+    padding: 12px 18px !important;
+    font-size: 14px !important;
+  }
+}
+
