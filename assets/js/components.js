@@ -6,12 +6,12 @@
    Edit once here → every page updates. */
 (function () {
   const PAGES = [
-    { id: 'home',   label: 'Home',         href: 'index.html' },
-    { id: 'how',    label: 'How it Works', href: 'how-it-works.html' },
-    { id: 'join',   label: 'Join Us',      href: 'join-us.html' },
-    { id: 'safety', label: 'Safety',       href: 'safety.html' },
-    { id: 'help',   label: 'Help / FAQ',   href: 'help.html' },
-    { id: 'blog',   label: 'Blog',         href: 'blog.html' },
+    { id: 'home',   label: 'Home',         href: '/' },
+    { id: 'how',    label: 'How it Works', href: '/how-it-works' },
+    { id: 'join',   label: 'Join Us',      href: '/join-us' },
+    { id: 'safety', label: 'Safety',       href: '/safety' },
+    { id: 'help',   label: 'Help / FAQ',   href: '/help' },
+    { id: 'blog',   label: 'Blog',         href: '/blog' },
   ];
 
   /* ---------------------------------------------------------------- icons */
@@ -82,8 +82,8 @@
   /* ----------------------------------------------------------------- nav */
   // EDIT: replace both values with your real app-download URL (or app-store landing page).
   // Pages that have the store-badge banner (Home, How it Works) jump to it; the other pages jump to Home's banner.
-  const DL = document.querySelector('ft-cta') ? '#download' : 'index.html#download';
-  const LOGO = (cls = '') => `<img class="brand-logo ${cls}" src="assets/logo-trimmed.png" alt="FeelyTalk – Your Talking Partner" width="149" height="48" decoding="async">`;
+  const DL = document.querySelector('ft-cta') ? '#download' : '/#download';
+  const LOGO = (cls = '') => `<img class="brand-logo ${cls}" src="/assets/logo-trimmed.png" alt="FeelyTalk – Your Talking Partner" width="149" height="48" decoding="async">`;
 
   class FtNav extends HTMLElement {
     connectedCallback() {
@@ -92,7 +92,7 @@
       this.innerHTML = `
       <header class="site-header">
         <div class="container-ft bar flex items-center justify-between gap-6">
-          <a href="index.html" aria-label="FeelyTalk – home" class="shrink-0">${LOGO()}</a>
+          <a href="/" aria-label="FeelyTalk – home" class="shrink-0">${LOGO()}</a>
           <nav aria-label="Primary" class="hidden lg:flex flex-1 justify-center gap-6 xl:gap-8">
             ${PAGES.map((p) => link(p, 'nav-link')).join('')}
           </nav>
@@ -103,7 +103,7 @@
         </div>
         <div id="ft-mobile-menu" class="menu-panel" role="dialog" aria-modal="true" aria-label="Menu" hidden>
           <div class="flex items-center justify-between" style="height:var(--nav-h)">
-            <a href="index.html" aria-label="FeelyTalk – home">${LOGO()}</a>
+            <a href="/" aria-label="FeelyTalk – home">${LOGO()}</a>
             <button type="button" class="menu-btn" data-close aria-label="Close menu"><ft-icon name="close" class="w-6 h-6"></ft-icon></button>
           </div>
           <nav aria-label="Mobile" class="flex flex-col mt-2">
@@ -132,34 +132,32 @@
   /* -------------------------------------------------------------- footer */
   const FOOT = {
     Product: [
-      ['home', 'Home', 'index.html'], ['how', 'How it Works', 'how-it-works.html'], ['join', 'Join Us', 'join-us.html'],
-      ['safety', 'Safety', 'safety.html'], ['help', 'Help / FAQ', 'help.html'], ['blog', 'Blog', 'blog.html'],
+      ['home', 'Home', '/'], ['how', 'How it Works', '/how-it-works'], ['join', 'Join Us', '/join-us'],
+      ['safety', 'Safety', '/safety'], ['help', 'Help / FAQ', '/help'], ['blog', 'Blog', '/blog'],
       ['', 'Download App', DL],
     ],
-    Company: [['', 'About Us', '#'], ['blog', 'Blog', 'blog.html'], ['', 'Careers', '#'], ['', 'Contact Us', 'help.html#support']],
-    Support: [['help', 'Help / FAQ', 'help.html'], ['', 'Community Guidelines', 'safety.html#rules'], ['', 'Terms of Service', '#'], ['', 'Privacy Policy', '#']],
+    Company: [['', 'About Us', '#'], ['blog', 'Blog', '/blog'], ['', 'Careers', '#'], ['', 'Contact Us', '/help#support']],
+    Support: [['help', 'Help / FAQ', '/help'], ['', 'Community Guidelines', '/safety#rules'], ['', 'Terms of Service', '#'], ['', 'Privacy Policy', '#']],
   };
   class FtFooter extends HTMLElement {
     connectedCallback() {
       const cur = this.getAttribute('current');
       const col = (title) => `
         <div>
-          <h2 class="foot-head">${title}</h2>
+          <p class="foot-head">${title}</p>
           <ul>${FOOT[title].map(([id, label, href]) =>
             `<li><a class="foot-link" href="${href}"${id && id === cur && title === 'Product' ? ' aria-current="page"' : ''}>${label}</a></li>`).join('')}</ul>
         </div>`;
-      const social = (n, label) => `<a href="#" aria-label="${label}" class="social"><ft-icon name="${n}" class="w-5 h-5"></ft-icon></a>`;
       this.innerHTML = `
       <footer class="pt-14 pb-8">
         <div class="container-ft grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div class="sm:col-span-2 lg:col-span-1">
-            <a href="index.html" aria-label="FeelyTalk – home">${LOGO()}</a>
-            <div class="flex gap-6 mt-5 pl-1">${social('instagram', 'Instagram')}${social('twitter', 'Twitter')}${social('youtube', 'YouTube')}${social('discord', 'Discord')}</div>
+            <a href="/" aria-label="FeelyTalk – home">${LOGO()}</a>
           </div>
           ${col('Product')}${col('Company')}${col('Support')}
         </div>
         <div class="container-ft mt-10 flex flex-wrap items-center justify-between gap-3 text-[14px] text-muted">
-          <p class="m-0">© 2024 FeelyTalk. All rights reserved.</p>
+          <p class="m-0">© 2026 FeelyTalk. All rights reserved.</p>
           <p class="m-0 flex items-center gap-1.5">Made with <ft-icon name="heart" class="w-4 h-4 text-brand"></ft-icon> in India</p>
         </div>
       </footer>`;
@@ -173,7 +171,7 @@
       this.innerHTML = `
       <section id="download" class="container-ft" aria-labelledby="cta-title">
         <div class="cta-band min-h-[260px] flex items-center justify-center text-center">
-          <picture><source type="image/webp" srcset="assets/img/cta-banner-bg.webp"><img src="assets/img/cta-banner-bg.jpg" alt="" class="cta-bg" width="1352" height="268" loading="lazy" decoding="async"></picture>
+          <picture><source type="image/webp" srcset="/assets/img/cta-banner-bg.webp"><img src="/assets/img/cta-banner-bg.jpg" alt="" class="cta-bg" width="1352" height="268" loading="lazy" decoding="async"></picture>
           <div class="cta-shade lg:hidden"></div>
           <p class="hand hand-white absolute hidden xl:block text-[22px] -rotate-[10deg] text-left" style="right:48px;top:28px" aria-hidden="true">Good<br>Chats<br>Better<br>Days</p>
           <div class="relative px-6 py-10">

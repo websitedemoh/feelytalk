@@ -1,0 +1,7 @@
+# Not part of the public site: keep out of Vercel deployments
+/_dev
+/.impeccable
+/new-images
+/sheet_*.png
+/seo
+/.playwright-mcp

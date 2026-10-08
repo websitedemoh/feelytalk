@@ -344,7 +344,9 @@ li.card, a.card { transition: transform .4s var(--ease-out), box-shadow .4s var(
 @media (prefers-reduced-motion: no-preference) {
   @keyframes ft-fade-up { from { opacity: 0; translate: 0 18px; } to { opacity: 1; translate: 0 0; } }
   @keyframes ft-fade-in { from { opacity: 0; } to { opacity: 1; } }
-  @keyframes ft-photo-in { from { opacity: 0; transform: scale(1.05); } to { opacity: 1; transform: scale(1); } }
+  /* LCP: the hero photo and H1 stay visible from the first frame; only position/scale animates */
+  @keyframes ft-photo-in { from { transform: scale(1.05); } to { transform: scale(1); } }
+  @keyframes ft-rise { from { translate: 0 18px; } to { translate: 0 0; } }
   @keyframes ft-float { 0%, 100% { translate: 0 0; } 50% { translate: 0 var(--fa, -7px); } }
   @keyframes ft-pulse { 0% { transform: scale(1); opacity: .55; } 100% { transform: scale(2.8); opacity: 0; } }
   @keyframes ft-ripple { 0% { transform: scale(1); opacity: .45; } 100% { transform: scale(1.8); opacity: 0; } }
@@ -356,6 +358,7 @@ li.card, a.card { transition: transform .4s var(--ease-out), box-shadow .4s var(
   .hero-grid > div:first-child > :nth-child(4) { --i: 3; }
   .hero-grid > div:first-child > :nth-child(5) { --i: 4; }
   .hero-grid > div:first-child > :nth-child(6) { --i: 5; }
+  .hero-grid > div:first-child > h1 { animation-name: ft-rise; }
   .hero-art > picture:first-child > img { animation: ft-photo-in .7s var(--ease-out) .1s both; }
 
   /* hero chips: fade in after the photo */

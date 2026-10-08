@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /_dev/
+Disallow: /.impeccable/
+
+Sitemap: https://www.feelytalk.com/sitemap.xml
